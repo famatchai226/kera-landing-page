@@ -123,7 +123,8 @@
       background: #000;
     }
 
-    .video-container iframe {
+    .video-container iframe,
+    .video-container video {
       position: absolute;
       top: 0;
       left: 0;
@@ -1356,9 +1357,10 @@
       </div>
       <div style="max-width: 800px; margin: 0 auto;">
         <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/pjh4xksWfKI" title="Comment payer sur Balthazar"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+          <video controls poster="./assets/hero caroussel/0.jpeg">
+            <source src="./assets/video/kera.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
         </div>
         <p class="body-md" style="font-size:0.85rem; margin-top: 1rem; text-align: center;">Regardez cette courte vidéo
           pour comprendre le processus d'achat étape par étape.</p>
