@@ -193,6 +193,19 @@
       display: block;
     }
 
+    .proof-card--video {
+      grid-column: 1 / -1;
+    }
+
+    .proof-video {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 520px;
+      object-fit: contain;
+      background: #000;
+    }
+
     @media (max-width: 900px) {
       .proof-grid {
         grid-template-columns: 1fr 1fr;
@@ -1551,6 +1564,12 @@
       </div>
 
       <div class="proof-grid">
+        <div class="proof-card proof-card--video fade-up">
+          <video class="proof-video" controls preload="metadata">
+            <source src="./assets/proofs/preuve.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+        </div>
         <div class="proof-card fade-up">
           <img src="./assets/proofs/1.jpeg" alt="Preuve 1" class="proof-img">
         </div>
