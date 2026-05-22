@@ -462,6 +462,40 @@
       padding: 0.55rem 1.4rem;
     }
 
+    /* ===================== LANGUAGE TOGGLE ===================== */
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1.5px solid var(--outline-variant);
+      background: var(--surface-container-lowest);
+      color: var(--on-surface-variant);
+      font-family: var(--font-headline);
+      font-size: 0.8rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      flex-shrink: 0;
+    }
+
+    .lang-toggle:hover {
+      background: var(--surface-container);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: scale(1.05);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
     /* ===================== HERO ===================== */
     #hero {
       padding-top: calc(var(--spacing-24) + 10px);
@@ -1275,6 +1309,7 @@
   <!-- Cloudflare Web Analytics -->
   <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "VOTRE_TOKEN_ICI"}'></script> -->
   <!-- End Cloudflare Web Analytics -->
+  <script src="./i18n.js" type="module"></script>
 </head>
 
 <body>
@@ -1283,8 +1318,11 @@
   <nav>
     <div class="container">
       <a href="#" class="nav-logo">KERA<span>TILWE</span></a>
-      <a href="https://baltazar.mymaketou.store/fr/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout"
-        class="btn-primary nav-cta">🔥 Acheter maintenant</a>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" onclick="switchLang(this.getAttribute('data-lang'))" data-lang="en" title="Switch language">EN</button>
+        <a href="https://baltazar.mymaketou.store/fr/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout"
+          class="btn-primary nav-cta" data-i18n="nav.cta">🔥 Acheter maintenant</a>
+      </div>
     </div>
   </nav>
 
@@ -1295,7 +1333,7 @@
 
         <!-- LEFT COLUMN: copy -->
         <div>
-          <div class="label-upper hero-badge fade-up">🔥 Promo Exclusive — Durée Limitée</div>
+          <div class="label-upper hero-badge fade-up" data-i18n="hero.badge">🔥 Promo Exclusive — Durée Limitée</div>
           <h1 class="display-lg hero-title fade-up fade-up-d1">
             <em>Accès Privé et Discret</em><br />
             aux Vidéos d'une Influenceuse<br />
@@ -1410,7 +1448,7 @@
   <section class="section" id="offre">
     <div class="container">
       <div class="section-header">
-        <p class="label-upper">Ce que tu reçois</p>
+        <p class="label-upper" data-i18n="offer.label">Ce que tu reçois</p>
         <h2 class="display-sm">Voici exactement ce que<br />tu vas recevoir :</h2>
         <p class="body-md">Un lien d'accès au canal Télégram contenant l'intégralité des vidéos de l'influenceuse.</p>
       </div>
@@ -1524,7 +1562,7 @@
   <section class="section" id="avis">
     <div class="container">
       <div class="section-header">
-        <p class="label-upper">Avis clients</p>
+        <p class="label-upper" data-i18n="testimonials.label">Avis clients</p>
         <h2 class="display-sm">+1850 membres<br />nous font déjà confiance</h2>
       </div>
 
@@ -1560,7 +1598,7 @@
   <section class="section" id="proofs" style="background: var(--surface-container-lowest);">
     <div class="container">
       <div class="section-header">
-        <p class="label-upper">Preuves de satisfaction</p>
+        <p class="label-upper" data-i18n="proofs.label">Preuves de satisfaction</p>
         <h2 class="display-sm">Ils ont déjà franchi le pas et ont donné leur autorisation pour préciser leur nom dans
           les témoignages. La confidentialité de nos clients est très primordial pour nous!</h2>
         <p class="body-md">Voici quelques retours de nos membres satisfaits par la qualité de nos services.</p>
@@ -1599,8 +1637,8 @@
   <section class="section faq-section" id="faq">
     <div class="container">
       <div class="section-header">
-        <p class="label-upper">FAQ</p>
-        <h2 class="display-sm">Foire aux questions</h2>
+        <p class="label-upper" data-i18n="faq.label">FAQ</p>
+        <h2 class="display-sm" data-i18n="faq.title">Foire aux questions</h2>
       </div>
 
       <div class="faq-list">
@@ -1692,7 +1730,7 @@
   <!-- ===== UPSELL SECTION ===== -->
   <section class="section" id="upsell" style="background: var(--surface-container-high); border-top: 1px solid var(--outline-variant); text-align: center;">
     <div class="container">
-      <p class="label-upper" style="color: var(--primary); margin-bottom: 1rem;">Recommandé pour vous</p>
+      <p class="label-upper" style="color: var(--primary); margin-bottom: 1rem;" data-i18n="upsell.label">Recommandé pour vous</p>
       <h2 class="display-sm" style="margin-bottom: 2rem;">Nos Collections Premium Exclusives</h2>
       
       <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 850px; margin: 0 auto;">
@@ -1724,7 +1762,7 @@
   <footer>
     <div class="container">
       <span class="footer-logo">BAL<em>TAZAR</em></span>
-      <p style="margin-bottom:1rem;">Un problème ? Contactez-nous :</p>
+      <p style="margin-bottom:1rem;" data-i18n="footer.contact_intro">Un problème ? Contactez-nous :</p>
       <p style="margin-bottom: 1.5rem;">
         <a href="mailto:balthazarservice3@gmail.com">balthazarservice3@gmail.com</a>
       </p>

@@ -1,0 +1,95 @@
+{
+  "lang": "fr",
+  "meta": {
+    "title": "Accès Privé et Discret — Vidéos d'une Influenceuse | Baltazar",
+    "description": "Accédez aux vidéos privées d'une influenceuse qui a fait le buzz. Canal Télégram privé et sécurisé."
+  },
+  "nav": {
+    "cta": "🔥 Acheter maintenant"
+  },
+  "hero": {
+    "badge": "🔥 Offre Limitée — Promo Exclusive",
+    "trust_secure": "Paiement sécurisé",
+    "trust_instant": "Accès instantané",
+    "trust_private": "Données privées",
+    "trust_email": "Lien par email"
+  },
+  "stats": {
+    "videos_label": "Vidéos Privées",
+    "photos_label": "Photos Exclusives",
+    "bd_label": "Contenu Inédit",
+    "members_label": "Membres actifs"
+  },
+  "offer": {
+    "label": "Ce que tu reçois",
+    "total_label": "Valeur totale",
+    "total_content": "de contenu",
+    "price_label": "Prix de l'offre aujourd'hui"
+  },
+  "telegram": {
+    "label": "Pourquoi Télégram ?",
+    "title": "Ta vie privée,<br />notre priorité absolue",
+    "feat1_strong": "100% Sécurisé",
+    "feat1_text": " — Télégram ne divulgue jamais tes informations personnelles.",
+    "feat2_strong": "Anonymat garanti",
+    "feat2_text": " — Tu peux utiliser un surnom lors du paiement.",
+    "feat3_strong": "Protection de tes proches",
+    "feat3_text": " — Le canal Télégram est isolé et sécurisé.",
+    "feat4_strong": "Livraison instantanée",
+    "feat4_text": " — Tu reçois le lien d'accès par email en quelques secondes.",
+    "iphone_note": "⚠️ <em>Si tu utilises un iPhone, accède via Safari pour te connecter à Télégram.</em>",
+    "visual_title": "Bon on se retrouve dans le canal ! 🤜🏼🤛🏼",
+    "visual_desc": "Une fois ton paiement validé, tu seras automatiquement redirigé vers notre canal privé."
+  },
+  "testimonials": {
+    "label": "Avis clients",
+    "title": "+2357 membres<br />nous font déjà confiance",
+    "t1_text": "Reçu le lien en moins de 2 minutes. Contenu de qualité, je recommande à 100%.",
+    "t2_text": "Tout fonctionne parfaitement. La discrétion est au rendez-vous.",
+    "t3_text": "Le contenu est exactement ce qui était annoncé. Merci 👌",
+    "cta_text": "Rejoins la communauté de <strong style=\"color:var(--primary);\">2357 membres satisfaits</strong>."
+  },
+  "proofs": {
+    "label": "Preuves de satisfaction",
+    "title": "Ils ont déjà franchi le pas. La confidentialité de nos clients est très primordiale pour nous!",
+    "desc": "Voici quelques retours de nos membres satisfaits."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Foire aux questions",
+    "q1": "Comment est-ce que je reçois le contenu ?",
+    "a1": "Après ton paiement, tu reçois un PDF par email contenant le lien d'invitation au canal Télégram privé.",
+    "q2": "Est-ce que c'est vraiment discret ?",
+    "a2": "Oui. Nous utilisons Télégram car il ne partage aucune information personnelle.",
+    "q3": "Combien de temps ai-je accès au canal ?",
+    "a3": "Une fois que tu rejoins le canal, tu y as accès de façon permanente.",
+    "q4": "Je suis sur iPhone, est-ce compatible ?",
+    "a4": "Oui ! Utilise l'application <strong>Safari</strong> pour te connecter à Télégram."
+  },
+  "cta_section": {
+    "promo_label": "🔥 LA PROMO EST DISPONIBLE UNIQUEMENT POUR TOUT DE SUITE",
+    "title": "Prêt à rejoindre les<br />2357 membres satisfaits ?",
+    "subtitle": "Accès instantané · Paiement sécurisé · 100% Discret",
+    "btn": "🛒 Acheter Maintenant — 7 700 FCFA",
+    "warning": "⚠️ <strong>Important :</strong> Assurez-vous d'insérer correctement votre email. Vous pouvez utiliser un <strong>pseudonyme</strong>.",
+    "payment_methods": "Wave, Orange Money, MTN momo, Moov money, Visa, MasterCard"
+  },
+  "upsell": {
+    "label": "Recommandé pour vous",
+    "title": "Nos Offres Premium Exclusives",
+    "balta_title": "Pack Baltazar (+2103 Vidéos, Photos & BD)",
+    "balta_desc": "La collection complète Baltazar en un seul canal privé.",
+    "balta_btn": "Voir l'offre Baltazar →",
+    "bd_title": "Pack +14 838 BD & Mangas pour Adultes",
+    "bd_desc": "Collection exclusive de bandes dessinées adultes.",
+    "bd_btn": "Voir l'offre BD →"
+  },
+  "footer": {
+    "contact_intro": "Un problème ? Contactez-nous :",
+    "copyright": "© 2024 Baltazar. Tous droits réservés. Contenu exclusivement pour adultes."
+  },
+  "float_bar": {
+    "text": "🔥 Promo : <strong>7 700 FCFA</strong> au lieu de 23 300 FCFA",
+    "btn": "J'achète 🛒"
+  }
+}
