@@ -50,6 +50,17 @@
       if (attr && v !== null) el.setAttribute(attr, v);
     });
 
+    document.querySelectorAll('[data-i18n-video]').forEach(el => {
+      const v = get(el.getAttribute('data-i18n-video'));
+      if (v !== null) {
+        const source = el.querySelector('source');
+        if (source) {
+          source.setAttribute('src', v);
+        }
+        el.load();
+      }
+    });
+
     document.documentElement.lang = dict.lang || lang;
 
     const t = document.querySelector('title');
