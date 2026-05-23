@@ -9,6 +9,8 @@
   },
   "hero": {
     "badge": "🔥 Offre Limitée — Promo Exclusive",
+    "title": "<em>Accès Privé et Discret</em><br />aux Vidéos d'une Influenceuse<br />qui a fait le Buzz 🔥",
+    "desc": "Toutes les vidéos sont déjà enregistrées dans le canal. Accès instantané via un <strong>canal Télégram sécurisé</strong> — 100% privé, livré dans votre email dès le paiement.",
     "cta": "⚡ Accéder aux Vidéos maintenant",
     "trust_secure": "Paiement sécurisé",
     "trust_instant": "Accès instantané",
@@ -16,16 +18,28 @@
     "trust_email": "Lien par email"
   },
   "stats": {
-    "videos_label": "Vidéos Privées",
-    "photos_label": "Photos Exclusives",
-    "bd_label": "Contenu Inédit",
-    "members_label": "Membres actifs"
+    "influenceuse": "Influenceuse Buzz",
+    "prive": "Privé & Discret",
+    "acces": "Accès Instantané",
+    "membres": "Membres satisfaits"
   },
   "offer": {
     "label": "Ce que tu reçois",
+    "title": "Voici exactement ce que<br />tu vas recevoir :",
+    "desc": "Un lien d'accès au canal Télégram contenant l'intégralité des vidéos de l'influenceuse.",
+    "card1_label": "Vidéos Exclusives",
+    "card1_title": "Toutes les vidéos",
+    "card2_label": "Accès Privé",
+    "card2_title": "Canal Sécurisé",
+    "card3_label": "Accès Permanent",
+    "card3_title": "Accès à Vie",
     "total_label": "Valeur totale",
     "total_content": "de contenu",
     "price_label": "Prix de l'offre aujourd'hui"
+  },
+  "video": {
+    "title": "Regarde cette video pour eviter de perdre du temps",
+    "subtitle": "Regardez cette courte vidéo pour comprendre le processus d'achat étape par étape."
   },
   "telegram": {
     "label": "Pourquoi Télégram ?",
@@ -64,8 +78,10 @@
     "a2": "Oui. Nous utilisons Télégram car il ne partage aucune information personnelle.",
     "q3": "Combien de temps ai-je accès au canal ?",
     "a3": "Une fois que tu rejoins le canal, tu y as accès de façon permanente.",
-    "q4": "Je suis sur iPhone, est-ce compatible ?",
-    "a4": "Oui ! Utilise l'application <strong>Safari</strong> pour te connecter à Télégram."
+    "q4": "Combien de temps ai-je accès au canal ?",
+    "a4": "Une fois que tu rejoins le canal Télégram, tu y as accès de façon permanente. Le contenu reste disponible aussi longtemps que le canal est actif.",
+    "q5": "Je suis sur iPhone, est-ce compatible ?",
+    "a5": "Oui ! Si tu utilises un iPhone, utilise l'application <strong>Safari</strong> pour te connecter à ton compte Télégram et accéder au canal."
   },
   "cta_section": {
     "promo_label": "🔥 LA PROMO EST DISPONIBLE UNIQUEMENT POUR TOUT DE SUITE",

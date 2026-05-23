@@ -8,7 +8,9 @@
     "cta": "🔥 Buy Now"
   },
   "hero": {
-    "badge": "🔥 Offre Limitée — Promo Exclusive",
+    "badge": "🔥 Limited Offer — Exclusive Promo",
+    "title": "<em>Private & Discreet Access</em><br />to an Influencer's Videos<br />Who Went Viral 🔥",
+    "desc": "All videos are already saved in the channel. Instant access via a <strong>secure Telegram channel</strong> — 100% private, delivered to your email upon payment.",
     "cta": "⚡ Access Videos Now",
     "trust_secure": "Secure Payment",
     "trust_instant": "Instant Access",
@@ -16,16 +18,28 @@
     "trust_email": "Link via Email"
   },
   "stats": {
-    "videos_label": "Private Videos",
-    "photos_label": "Exclusive Photos",
-    "bd_label": "Exclusive Content",
-    "members_label": "Active Members"
+    "influenceuse": "Viral Influencer",
+    "prive": "Private & Discreet",
+    "acces": "Instant Access",
+    "membres": "Satisfied Members"
   },
   "offer": {
     "label": "What you get",
+    "title": "Here's exactly what<br />you will receive:",
+    "desc": "An access link to the Telegram channel containing all the influencer's videos.",
+    "card1_label": "Exclusive Videos",
+    "card1_title": "All the videos",
+    "card2_label": "Private Access",
+    "card2_title": "Secure Channel",
+    "card3_label": "Permanent Access",
+    "card3_title": "Lifetime Access",
     "total_label": "Total value",
     "total_content": "of content",
     "price_label": "Today's offer price"
+  },
+  "video": {
+    "title": "Watch this video to avoid wasting time",
+    "subtitle": "Watch this short video to understand the purchase process step by step."
   },
   "telegram": {
     "label": "Why Telegram?",
@@ -64,8 +78,10 @@
     "a2": "Yes. We use Telegram because it doesn't share any personal information.",
     "q3": "How long do I have access?",
     "a3": "Once you join the Telegram channel, you have permanent access.",
-    "q4": "I'm on iPhone, is it compatible?",
-    "a4": "Yes! Use the <strong>Safari</strong> browser app to connect to Telegram."
+    "q4": "How long do I have access to the channel?",
+    "a4": "Once you join the Telegram channel, you have permanent access. The content remains available as long as the channel is active.",
+    "q5": "I'm on iPhone, is it compatible?",
+    "a5": "Yes! If you use an iPhone, use the <strong>Safari</strong> browser app to connect to your Telegram account and access the channel."
   },
   "cta_section": {
     "promo_label": "🔥 THIS PROMO IS AVAILABLE FOR RIGHT NOW ONLY",
