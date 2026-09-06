@@ -1840,6 +1840,86 @@
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="/<unique-path>/script.js"></script>
+<!-- ================== 18+ AGE GATE ================== -->
+<style>
+#ageGate{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.85);backdrop-filter:blur(6px);padding:20px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#ageGate[hidden]{display:none}
+.age-gate-card{background:#141414;color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:16px;max-width:440px;width:100%;padding:32px 28px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.age-gate-badge{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:#e11d48;font-weight:800;font-size:20px;margin-bottom:16px}
+.age-gate-card h2{font-size:22px;margin:0 0 10px;line-height:1.3}
+.age-gate-card p{font-size:15px;color:#cbd5e1;margin:0 0 24px;line-height:1.5}
+.age-gate-btns{display:flex;flex-direction:column;gap:10px}
+.age-gate-btn{border:0;cursor:pointer;font-size:16px;font-weight:700;padding:13px 16px;border-radius:10px;transition:transform .1s,opacity .2s,background .2s}
+.age-gate-btn:active{transform:scale(.98)}
+.age-gate-yes{background:#16a34a;color:#fff}
+.age-gate-yes:hover{background:#15803d}
+.age-gate-no{background:transparent;color:#e2e8f0;border:1px solid rgba(255,255,255,.25)}
+.age-gate-no:hover{background:rgba(255,255,255,.08)}
+.age-gate-msg{color:#f87171;font-size:13px;font-weight:600;margin-top:14px;min-height:18px}
+.age-gate-card.shake{animation:ageGateShake .4s}
+@keyframes ageGateShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+</style>
+
+<div id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+  <div class="age-gate-card" id="ageGateCard">
+    <div class="age-gate-badge">18+</div>
+    <h2 id="ageGateTitle">Avez-vous plus de 18 ans ?</h2>
+    <p id="ageGateDesc">Ce site est réservé aux adultes.</p>
+    <div class="age-gate-btns">
+      <button type="button" class="age-gate-btn age-gate-yes" id="ageGateYes">Oui, j'ai plus de 18 ans</button>
+      <button type="button" class="age-gate-btn age-gate-no" id="ageGateNo">Non, je suis mineur</button>
+    </div>
+    <div class="age-gate-msg" id="ageGateMsg" role="status"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  function detectLang(){
+    try{
+      var s=localStorage.getItem('preferred-lang');
+      if(s==='fr'||s==='en')return s;
+      s=localStorage.getItem('369secrets_lang');
+      if(s==='fr'||s==='en')return s;
+    }catch(e){}
+    var langs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||'fr'];
+    for(var i=0;i<langs.length;i++){
+      var c=(langs[i]||'').slice(0,2).toLowerCase();
+      if(c==='en')return'en';
+      if(c==='fr')return'fr';
+    }
+    return'fr';
+  }
+  var T={
+    fr:{title:"Avez-vous plus de 18 ans ?",desc:"Ce site est réservé aux adultes.",yes:"Oui, j'ai plus de 18 ans",no:"Non, je suis mineur",denied:"Accès refusé"},
+    en:{title:"Are you over 18 years old?",desc:"This website is for adults only.",yes:"Yes, I am over 18",no:"No, I am under 18",denied:"Access denied"}
+  };
+  var L=T[detectLang()];
+  document.getElementById('ageGateTitle').textContent=L.title;
+  document.getElementById('ageGateDesc').textContent=L.desc;
+  document.getElementById('ageGateYes').textContent=L.yes;
+  document.getElementById('ageGateNo').textContent=L.no;
+
+  var gate=document.getElementById('ageGate');
+  var card=document.getElementById('ageGateCard');
+  var msg=document.getElementById('ageGateMsg');
+  var prevOverflow=document.body.style.overflow;
+  document.body.style.overflow='hidden';
+
+  document.getElementById('ageGateYes').addEventListener('click',function(){
+    gate.setAttribute('hidden','');
+    document.body.style.overflow=prevOverflow;
+  });
+
+  document.getElementById('ageGateNo').addEventListener('click',function(){
+    msg.textContent=L.denied;
+    card.classList.remove('shake');
+    void card.offsetWidth;
+    card.classList.add('shake');
+  });
+})();
+</script>
+
 </body>
 
 </html>
