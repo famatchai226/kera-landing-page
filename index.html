@@ -1305,6 +1305,93 @@
     .fade-up-d4 {
       animation-delay: 0.4s;
     }
+
+    /* ---- Cartes d'upsell : visuel produit + carte ---- */
+    .upsell-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .upsell-card {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+      background: var(--surface-container-lowest);
+      border: 1px solid var(--outline-variant);
+      border-radius: 1.75rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      text-align: left;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .upsell-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.09);
+    }
+
+    /* visuel : carre, cale en haut du cadrage (les affiches sont en portrait) */
+    .upsell-thumb {
+      display: block;
+      flex: 0 0 auto;
+      width: 152px;
+      height: 152px;
+      border-radius: 1.25rem;
+      object-fit: cover;
+      object-position: center 20%;
+      background: var(--surface-container);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .upsell-body {
+      flex: 1 1 260px;
+      min-width: 0;
+    }
+
+    .upsell-body h3 {
+      margin-bottom: 0.5rem;
+      color: var(--on-surface);
+    }
+
+    .upsell-body p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .upsell-card .btn-primary,
+    .upsell-card .btn-secondary {
+      animation: none;
+    }
+
+    @media (max-width: 640px) {
+      .upsell-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.25rem;
+        padding: 1.25rem;
+      }
+
+      .upsell-thumb {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .upsell-card {
+        transition: none;
+      }
+
+      .upsell-card:hover {
+        transform: none;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      }
+    }
+
   </style>
   <!-- Cloudflare Web Analytics -->
   <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "VOTRE_TOKEN_ICI"}'></script> -->
@@ -1731,25 +1818,25 @@
       <p class="label-upper" style="color: var(--primary); margin-bottom: 1rem;" data-i18n="upsell.label">Recommandé pour vous</p>
       <h2 class="display-sm" style="margin-bottom: 2rem;" data-i18n="upsell.title">Nos Collections Premium Exclusives</h2>
       
-      <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 850px; margin: 0 auto;">
+      <div class="upsell-grid">
         
         <!-- Upsell 1 : Collection Baltazar -->
-        <div style="background: white; border-radius: 2rem; padding: 2.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; text-align: left;">
-          <img src="https://balta.famatchai226.workers.dev/assets/hero%20caroussel/0.jpeg" alt="Collection Balta" style="width: 120px; height: 120px; object-fit: cover; border-radius: 1.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 2px solid white;">
-          <div style="flex: 1; min-width: 280px;">
-            <h3 class="title-lg" style="margin-bottom: 0.5rem; color: var(--on-surface);" data-i18n="upsell.balta_title">Collection Premium Baltazar</h3>
-            <p class="body-md" style="font-size: 0.95rem; margin-bottom: 1.5rem;" data-i18n="upsell.balta_desc">Ne vous contentez pas d'une seule influenceuse. Accédez à notre canal massif contenant plus de 2000 vidéos exclusives.</p>
-            <a href="https://balta.famatchai226.workers.dev/" class="btn-primary" style="animation: none;" data-i18n="upsell.balta_btn">Voir l'offre Premium →</a>
+        <div class="upsell-card">
+          <img class="upsell-thumb" src="https://balta.famatchai226.workers.dev/assets/hero%20caroussel/0.jpeg" alt="Collection Balta" loading="lazy" decoding="async">
+          <div class="upsell-body">
+            <h3 class="title-lg" data-i18n="upsell.balta_title">Collection Premium Baltazar</h3>
+            <p class="body-md" data-i18n="upsell.balta_desc">Ne vous contentez pas d'une seule influenceuse. Accédez à notre canal massif contenant plus de 2000 vidéos exclusives.</p>
+            <a href="https://balta.famatchai226.workers.dev/" class="btn-primary" data-i18n="upsell.balta_btn">Voir l'offre Premium →</a>
           </div>
         </div>
 
         <!-- Upsell 2 : BD Hentai -->
-        <div style="background: white; border-radius: 2rem; padding: 2.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; text-align: left;">
-          <img src="https://bd.famatchai226.workers.dev/assets/hero%20caroussel/0.jpg" alt="Collection BD Adulte" style="width: 120px; height: 120px; object-fit: cover; border-radius: 1.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 2px solid white;">
-          <div style="flex: 1; min-width: 280px;">
-            <h3 class="title-lg" style="margin-bottom: 0.5rem; color: var(--on-surface);" data-i18n="upsell.bd_title">Pack +14 838 BD & Mangas pour Adultes</h3>
-            <p class="body-md" style="font-size: 0.95rem; margin-bottom: 1.5rem;" data-i18n="upsell.bd_desc">Découvrez notre collection exclusive de bandes dessinées pour adultes. Un accès immédiat à des milliers d'histoires inédites.</p>
-            <a href="https://bd.famatchai226.workers.dev/" class="btn-secondary" style="animation: none;" target="_blank" rel="noopener" data-i18n="upsell.bd_btn">Voir l'offre BD →</a>
+        <div class="upsell-card">
+          <img class="upsell-thumb" src="https://bd.famatchai226.workers.dev/assets/hero%20caroussel/0.jpg" alt="Collection BD Adulte" loading="lazy" decoding="async">
+          <div class="upsell-body">
+            <h3 class="title-lg" data-i18n="upsell.bd_title">Pack +14 838 BD & Mangas pour Adultes</h3>
+            <p class="body-md" data-i18n="upsell.bd_desc">Découvrez notre collection exclusive de bandes dessinées pour adultes. Un accès immédiat à des milliers d'histoires inédites.</p>
+            <a href="https://bd.famatchai226.workers.dev/" class="btn-secondary" target="_blank" rel="noopener" data-i18n="upsell.bd_btn">Voir l'offre BD →</a>
           </div>
         </div>
 
