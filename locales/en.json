@@ -10,8 +10,10 @@
   "hero": {
     "badge": "🔥 Limited Offer — Exclusive Promo",
     "title": "<em>Private & Discreet Access</em><br />to an Influencer's Videos<br />Who Went Viral 🔥",
-    "desc": "All videos are already saved in the channel. Instant access via a <strong>secure Telegram channel</strong> — 100% private, delivered to your email upon payment.",
-    "cta": "⚡ Access Videos Now",
+    "desc": "All videos are already in the channel: instant access via <strong>Telegram</strong>, delivered by email upon payment.",
+    "cta": "🛒 Buy Now — 5,500 FCFA",
+    "proof": "⭐ 2,357+ members already trust us",
+  "price_note": "ℹ️ Check your email: that's where the link arrives. A <strong>pseudonym</strong> is enough.",
     "trust_secure": "Secure Payment",
     "trust_instant": "Instant Access",
     "trust_private": "Private Data",
@@ -25,20 +27,23 @@
   },
   "offer": {
     "label": "What you get",
-    "title": "Here's exactly what<br />you will receive:",
+    "title": "Everything is included",
     "desc": "An access link to the Telegram channel containing all the influencer's videos.",
     "card1_label": "Exclusive Videos",
     "card1_title": "All the videos",
+  "card1_desc": "All her videos, already saved in the channel.",
     "card2_label": "Private Access",
     "card2_title": "Secure Channel",
+  "card2_desc": "Private channel, 100% discreet: no trace visible to those around you.",
     "card3_label": "Permanent Access",
     "card3_title": "Lifetime Access",
+  "card3_desc": "Permanent access after payment: no subscription.",
     "total_label": "Total value",
     "total_content": "of content",
     "price_label": "Today's offer price"
   },
   "video": {
-    "title": "Watch this video to avoid wasting time",
+    "title": "How to buy in 2 minutes",
     "subtitle": "Watch this short video to understand the purchase process step by step.",
     "src": "./assets/video/kera 7k eng.mp4"
   },
@@ -61,26 +66,29 @@
     "label": "Customer Reviews",
     "title": "+2357 members<br />already trust us",
     "t1_text": "Got the link in less than 2 minutes. Quality content, 100% recommend.",
+    "t1_author": "Patrick, Abidjan",
     "t2_text": "Everything works perfectly. Discretion is definitely there.",
+    "t2_author": "Ibrahim, Ouagadougou",
     "t3_text": "The content is exactly as advertised. Thanks 👌",
+    "t3_author": "Serge, Douala",
     "cta_text": "Join the community of <strong style=\"color:var(--primary);\">2357 satisfied members</strong>."
   },
   "proofs": {
     "label": "Proof of satisfaction",
-    "title": "They've taken the step. Client confidentiality is paramount to us!",
-    "desc": "Here are some feedback from our satisfied members."
+    "title": "They already took the step",
+    "desc": "Real first names and cities, published with their consent. Confidentiality stays our absolute priority."
   },
   "faq": {
     "label": "FAQ",
     "title": "Frequently Asked Questions",
     "q1": "How do I receive the content?",
-    "a1": "After your payment, you receive a PDF by email with the invitation link to the private Telegram channel.",
+    "a1": "After payment, you get a PDF by email with the invite link to the Telegram channel.",
     "q2": "Is it really discreet?",
-    "a2": "Yes. We use Telegram because it doesn't share any personal information.",
+    "a2": "Yes. Telegram shares no personal information.",
     "q3": "How long do I have access?",
-    "a3": "Once you join the Telegram channel, you have permanent access.",
-    "q4": "How long do I have access to the channel?",
-    "a4": "Once you join the Telegram channel, you have permanent access. The content remains available as long as the channel is active.",
+    "a3": "Once you join the channel, access is permanent.",
+    "q4": "Can I keep access if I change my phone?",
+    "a4": "Yes. Access is tied to your Telegram account, not your phone.",
     "q5": "I'm on iPhone, is it compatible?",
     "a5": "Yes! If you use an iPhone, use the <strong>Safari</strong> browser app to connect to your Telegram account and access the channel."
   },
@@ -89,6 +97,7 @@
     "title": "Ready to join the<br />2357 satisfied members?",
     "subtitle": "Instant Access · Secure Payment · 100% Discreet",
     "btn": "🛒 Buy Now — 5,500 FCFA",
+    "proof": "⭐ Joined by 2,357+ members since launch",
     "warning": "⚠️ <strong>Important:</strong> Make sure to enter your email correctly. You can use a <strong>pseudonym</strong>.",
     "payment_methods": "Wave, Orange Money, MTN momo, Moov money, Visa, MasterCard"
   },
